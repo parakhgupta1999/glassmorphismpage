@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glsssmorphijsm website</title>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+<style>
+    * {
+        padding: 0;
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+
+    body::after,
+    body::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.4;
+    }
+
+    body::before {
+        clip-path: circle(30% at left 20%);
+        background: linear-gradient(135deg, #f6416c 10%, #ff9a9e 100%);
+    }
+
+    body::after {
+        clip-path: circle(25% at right 80%);
+        background: linear-gradient(135deg, #f6416c 10%, #ff9a9e 100%);
+    }
+
+    body {
+        background: linear-gradient(135deg, #ff9a9e 10%, #f6416c 100%);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 80%;
+        height: 80%;
+        background: rgba(255, 255, 255, 0.1);
+        /* Transparent white */
+        border-radius: 15px;
+        /* Rounded corners */
+        padding: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        /* Soft shadow */
+        backdrop-filter: blur(19px);
+        /* Frosted glass effect */
+        -webkit-backdrop-filter: blur(10px);
+        /* Frosted glass effect for Safari */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        /* Light border */
+        position: relative;
+        z-index: 10;
+    }
+
+    .container::after,
+    .container::before {
+        content: '';
+        height: 400px;
+        width: 400px;
+        filter: blur(50px);
+
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+
+        top: -30%;
+        z-index: 5;
+        left: -50%;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container .nav .MID A {
+        text-decoration: none;
+        color: black;
+        /* font-weight: 600; */
+    }
+
+    .RIGHT .button {
+        padding: 0 6px 0 0;
+    }
+
+    .RIGHT .button :not(:nth-child(2)) {
+        padding-right: 10px;
+    }
+
+    .container nav .RIGHT button {
+        padding: 6px;
+        border-radius: 11px;
+        border: none;
+        box-shadow: 2px 2px 2px 2px rgb(255, 255, 255, 0.1);
+        background: linear-gradient(135deg, #ff9a9e 10%, #f6416c 100%);
+        color: white;
+    }
+
+    /* 
+    .MID {
+        color: black;
+    } */
+
+    section {
+        height: 80%;
+        /* width: 30%; */
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* word-wrap: break-word; */
+        flex-direction: column;
+    }
+
+
+
+    footer {
+        cursor: pointer;
+        display: flex;
+        justify-content: right;
+        padding: 20px;
+        /* width: 100%; */
+        /* height: 0%; */
+        align-items: center;
+    }
+
+    footer .dash {
+        padding-right: 2px;
+        /* Adjust this value to increase/decrease space between dash and text */
+    }
+
+    footer h5 {
+        margin-right: px;
+        /* Adjust this value for spacing between text and icon */
+    }
+
+    footer i {
+        padding-left: 2px;
+        /* background-color: pink; */
+        font-size: 28px;
+        /* background-color: pink; */
+        /* Space between the text and icon */
+        /* border: 1px solid black; */
+    }
+
+    i {
+        color: linear-gradient(135deg, #ff9a9e 10%, #f6416c 100%);
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="LEFT">
+                <h2>
+                    SUPER SITE>
+                </h2>
+            </div>
+            <div class="MID">
+                <a href="#">HOME</a>
+                <a href="#">LATEST</a>
+                <a href="#">OFFERS</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <DIV class="RIGHT">
+                <button class="button">Login</button>
+                <button class="button">Register</button>
+            </DIV>
+        </nav>
+        <section>
+            <h1>Learn To Enjoy,</h1>
+            <h1> Every Moment Of Life
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> architecto rerum, ad veritatis autem
+                eligendi <br> consequuntur. Rerum excepturi. </p>
+        </section>
+        <footer>
+            <div class="dash">
+                &mdash;&mdash;
+            </div>
+            <h5>Play Video</h5>
+            <i class='bx bxs-video'></i>
+        </footer>
+    </div>
+</body>
+
+</html>
